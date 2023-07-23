@@ -9,11 +9,10 @@ function esPositivo(num) {
    // Si el número es 0, devuelve false.
    // Tu código:
    if(num>0)
-     console.log("Es positivo ");
+     return("Es positivo");
    else if(num<0)
-      console.log("Es negativo")
-   else
-      console.log("false");
+      return("Es negativo")
+   else   return(false);
 }
 esPositivo(5);
 
@@ -67,7 +66,7 @@ function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return(euro +" euros, son "+euro*1.20+" dólares")
+   return(euro*1.20)
 }
 deEuroAdolar(20);
 

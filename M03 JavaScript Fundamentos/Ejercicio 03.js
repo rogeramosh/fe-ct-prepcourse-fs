@@ -13,7 +13,7 @@ function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
    // Tu código:
-   return(str1.long==str2.long);
+   return(str1.length==str2.length);
 }
 tienenMismaLongitud("casa","piso");
 
@@ -37,7 +37,9 @@ function esPar(num) {
    // Retorna true si "num" es par.
    // De lo contrario, retorna false.
    // Tu código:
+   return(num%2==0);
 }
+esPar(50)
 
 function esImpar(num) {
    // Retorna true si "num" es impar.
