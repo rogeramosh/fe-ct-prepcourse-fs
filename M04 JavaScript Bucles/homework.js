@@ -7,7 +7,7 @@ function obtenerMayor(x, y) {
    // Tu código:
    if(x>y) return x ; else if(y>x) return y;else return x;
 }
-obtenerMayor (x,y);
+obtenerMayor (5,3);
 
 function mayoriaDeEdad(edad) {
    // Determinar si la persona puede ingresar al evento según su edad.
