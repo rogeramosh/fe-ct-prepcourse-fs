@@ -86,25 +86,58 @@ function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   for(var i=0; i<array.length-1; i++){
+      if(elemento === array[i]) return true;  else return false;
+   }
+
 }
+var array7 = ["paz","luz", "sol", "pez","mol"]
+var elemento7= "paz"; // true
+var elemento7b = "mal"; //false
+console.log(arrayContiene(array7, elemento7))
+console.log(arrayContiene(array7, elemento7b))
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   var total= 0;
+   for(var i=0;i<arrayOfNums.length;i++){
+      total= total + arrayOfNums[i];
+   }
+   return total;
 }
+var arrayOfNums1= [2,3,5,7,8,9];
+
+console.log(agregarNumeros(arrayOfNums1));
+
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
+   var total= 0;
+   for(var i=0;i<resultadosTest.length;i++){
+      total= total + resultadosTest[i];
+   }
+   total = total/resultadosTest.length;
+   return total;
 }
+var resultadosTest2= [2,3,5,7,8,9];
+
+console.log(promedioResultadosTest(resultadosTest2));
+
 
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   var mayorNu= Math.max(...arrayOfNums)  
+   return mayorNu;
+
 }
+var arrayOfNums3= [23,38,5,6,1,27];
+console.log(numeroMasGrande(arrayOfNums3))
 
 function multiplicarArgumentos() {
    // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto.
