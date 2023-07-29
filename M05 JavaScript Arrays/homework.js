@@ -3,35 +3,66 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array[0];
 }
+var array1 = [6,2,3,4]
+console.log(devolverPrimerElemento(array1));
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array[array.length-1]
+   
 }
+var array2=[3,29,4,8,2]
+
+console.log(devolverUltimoElemento(array2));
+
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return array.length
 }
+var array3 = [1,2,3,4,8]
+
+console.log(obtenerLargoDelArray(array3));
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   array = array.map((element)=> {return element +1 });
+   return array;
+  
 }
+var array5= [4,5,6,7,8];
+incrementarPorUno(array5);
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.push(elemento);
+   return array;
 }
+var array4 = ["uno","dos", "tres", "cuatro"];
+var elemento1= "siete";
+agregarItemAlFinalDelArray(array4,elemento1)
+
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.unshift(elemento);
+   return array
 }
+var array6 =[1,2,3,4,5,6];
+var elemento6 = 9;
+console.log(array6);
+console.log(agregarItemAlComienzoDelArray(array6,elemento6))
+
 
 function dePalabrasAFrase(palabras) {
    // El argumento "palabras" es un arreglo de strings.
@@ -39,7 +70,17 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
+   var total="";
+   palabras = palabras.map((txt)=> {return txt + " "})
+   for(var i=0; i<palabras.length; i++){
+      total = total + palabras[i];
+   }
+   return total;
 }
+var palabras1 = ["hola", "cartagena", "ciudad", "costera"]
+
+console.log(dePalabrasAFrase(palabras1))
+
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
