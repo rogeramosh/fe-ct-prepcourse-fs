@@ -144,25 +144,66 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+   if(arguments.length===0)return 0; else if (arguments.length===1) return arguments[0];
+   else  {
+      var elemen=1;
+      for(var i=0;i<arguments.length;i++){
+         elemen *= arguments[i];
+      }
+   return elemen;} 
+
 }
+console.log(multiplicarArgumentos(1,5,7));
+console.log(multiplicarArgumentos(10));
+console.log(multiplicarArgumentos());
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
-}
+   var constante=0;
+   for (var i=0; i<array.length; i++){
+      if (array[i]>18) constante++
+      }
+      return constante;
+   }
+
+var array8=[2,67,8,9,42,3]
+
+console.log(cuentoElementos(array8));
 
 function diaDeLaSemana(numeroDeDia) {
    // Supongamos que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
-}
+  
+      if(numeroDeDia===7 || numeroDeDia===1) return console.log("Es finde semana");
+       else return console.log("Es día laboral");
+
+   }
+
+diaDeLaSemana(7);
+var text=14254;
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
+  
+   // var texto =  num.toString();
+   // var aux = []
+   // aux=texto.split(",");
+   return num;
+   //if(aux[0]===9) return true; else return false;
+   
+  
+
+ // var  tesxto = string.split(",");
+  // return console.log(texto);
 }
+var numx=9478
+empiezaConNueve(numx)
+
 
 function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
